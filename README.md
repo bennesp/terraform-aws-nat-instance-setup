@@ -20,7 +20,7 @@ For the auto-generated documentation, see [DOCS.md](./DOCS.md).
 
 ```hcl
 module "test" {
-  source = "bennesp/terraform-aws-nat-instance-setup"
+  source = "bennesp/nat-instance-setup/aws"
 
   nat_instance_instance_type = "t3a.micro"
 
@@ -39,7 +39,7 @@ You could do it with cloud-init, using the variable `cloud_init_config`:
 
 ```hcl
 module "test" {
-  source = "bennesp/terraform-aws-nat-instance-setup"
+  source = "bennesp/nat-instance-setup/aws"
 
   nat_instance_instance_type = "t3a.micro"
 
@@ -64,7 +64,7 @@ Example with all the variable you can set
 
 ```hcl
 module "test" {
-  source = "bennesp/terraform-aws-nat-instance-setup"
+  source = "bennesp/nat-instance-setup/aws"
 
   nat_instance_instance_type = "t3a.micro"
   nat_instance_volume_size   = 16
